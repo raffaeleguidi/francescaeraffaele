@@ -1,54 +1,75 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
+        <script src="javascripts/jquery-2.2.3.min.js"></script>
+        <script>
+        function check_resize(){
+            var bh = window.innerHeight;
+            var mh = $("#main").height();
+            if (bh > mh) {
+                $("#main").offset({"top": "" + ((bh-mh)/2) });
+            } else {
+                 $("#main").offset({"top": 10 });
+            }
+        }
+        //setInterval(check_resize, 2000);
+        $( document ).ready(function() {
+            check_resize();
+        });
+        $( window ).resize(function() {
+            check_resize();
+        });
+        </script>
         <style>
-            body {
+           body {
                 background-image:  url("images/fraeraf.jpeg");
-                --background-size: auto 100%;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
                 color: beige;
                 font-family: 'Englische';
                 text-align: center;
-                min-width: 1200px;
-                min-height: 700px;
                 text-align: center;
-
             }
-            .sfondo {
-                --background:transparent url('/images/white.gif') repeat center top;
-                --background-color: white;
+             .separatore {
+                --min-height: 5.9vw;
+                --border: 1px solid green;
+            }
+            .riquadro {
+                --border: 0.01em solid red;
                 background-color: rgba(255, 255, 255, 0.4);
-                --opacity: 0.4;
                 color: #3b3929;
-                --color: black;
                 font-weight: bold;
-                max-width: 1200px;
-                height: 700px;
-                margin-top: auto;
-                margin-bottom: auto;
-                margin-left: auto;
-                margin-right: auto;
-                --margin: 40px;
-                --border: 1px solid red;
+                --position: relative;
+                --max-width: 80em;
+                height: 63vw;
+                width: 100%;
+                --margin-top:50%;
+                --top: 50%;
+                --transform: translateY(-50%);
+                --margin-top: auto;
+                --margin-bottom: auto;
+                --margin-left: auto;
+                --margin-right: auto;
+                --display: table-cell;
+                --vertical-align: middle;
             }
             .nome {
                 position: relative;
-                width: 400px;
-                font-size: 3em;
-                top: 50px;
+                width: 30vw;
+                font-size: 4vw;
+                top: 5vw;
             }
             div {
-                --border: 1px solid red;
+                --border: 0.01em solid red;
             }
             .left {
-                left: 50px;
+                left: 8vw;
                 float: left;
                 text-align: center;
             }
             .right {
-                right: 50px;
+                right: 8vw;
                 float:right;
                 text-align: center;
             }
@@ -57,51 +78,53 @@
                 src: url('fonts/EnglischeSchT.ttf'); /*URL to font*/
             }
             .centertext {
-                text-align: center;
-                position: absolute;
-                --background-color: bisque;
-                --margin-top: 70px;
-                --margin-left: auto;
-                --margin-right: auto;
-                --border: 1px solid red;
-                --width: 800px;
-                font-size: 2em;
-
-                width: 400px;
-                height: 400px;
-
-
                 position: relative;
                 float: center;
-
-                top:0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-
+                text-align: center;
+                position: relative;
+                top: 8vw;
+                width: 50vw;
+                height: 40vw;
+                font-size: 3vw;
                 margin: auto;
             }
             .inbasso {
                 position: relative;
                 float: right;
-                width: 400px;
-                font-size: 1.8em;
-                bottom: 50px;
-                right: 150px;
-                --border: 1px solid red;
+                top: 10vw;
+                width: 40vw;
+                font-size: 3vw;
+                right: 3vw;
                 text-align: left;
+            }
+            .esterno {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+            #fuori {
+                height: 250px
+            }
+            #floater {
+                float: left;
+                height: 50%;
+                width: 100%;
+                margin-bottom: -50px;
+            }
+            #dentro {
+                clear: both;
+                height: 100px;
             }
         </style>
     </head>
     <body>
-        <div class="sfondo">
+        <div class="riquadro" id="main">
             <div class="nome left">Francesca Iofrida</div>
             <div class="nome right">Raffaele Guidi</div>
-
+            
             <br clear="all"/>
-            <div style="min-height: 100px"></div>
-            <div class="centertext">
 
+            <div class="centertext">
                 Sono lieti di annunciare<br/>
                 il loro matrimonio<br/>
                 il 12 giugno 2016<br/>
@@ -112,9 +135,7 @@
                 Borgo di Tragliata<br/>
                 in Via del Casale di Tragliata 2,<br/>
                 Fiumicino
-
             </div>
-            <div style="min-height: 100px"></div>
             <div class="inbasso">È gradita gentile conferma</div>
         </div>
     </body>
