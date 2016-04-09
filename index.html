@@ -90,12 +90,12 @@
             }
             .inbasso {
                 position: relative;
-                float: right;
+                float: center;
                 top: 10vw;
-                width: 40vw;
+                width: 100vw;
                 font-size: 3vw;
                 right: 3vw;
-                text-align: left;
+                text-align: center;
             }
             .esterno {
                 display: table;
@@ -115,6 +115,31 @@
                 clear: both;
                 height: 100px;
             }
+            a:link {
+                color: beige;
+                text-decoration: none;
+
+            }
+
+            /* visited link */
+            a:visited {
+                color: beige;
+                text-decoration: none;
+
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+
+            /* selected link */
+            a:active {
+                color: blue;
+                text-decoration: none;
+
+            }
         </style>
     </head>
     <body>
@@ -132,11 +157,16 @@
                 <br/>
                 Cerimonia e ricevimento si terranno<br/>
                 presso la Dimora Storica del<br/>
-                Borgo di Tragliata<br/>
+                <a target="_blank" href="http://www.tragliata.it/">Borgo di Tragliata</a><br/>
                 in Via del Casale di Tragliata 2,<br/>
                 Fiumicino
             </div>
-            <div class="inbasso">È gradita gentile conferma</div>
+            <div class="inbasso">
+                <a target="_blank" href="http://www.giverviaggi.com/il-grande-nord/norvegia-2/meravigliosa-norvegia/">Il vostro regalo</a> &#167;
+                <a target="_blank" href="comecontribuire.pdf">Come contribuire</a> &#167;
+                <a target="_blank" href="https://www.google.it/maps/place/Borgo+di+Tragliata/@41.9722274,12.2555156,17z/data=!3m1!4b1!4m2!3m1!1s0x132f59ffbeda03ab:0xf93fc4f36057de">Come raggiungerci</a>
+            </div>
+            <!-- <div class="inbasso">È gradita gentile conferma</div>-->
         </div>
     </body>
 <html>
