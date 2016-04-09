@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-image:  url("images/fraeraf.jpeg");
+                --background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                color: beige;
+                font-family: 'Englische';
+                text-align: center;
+                min-width: 1200px;
+                min-height: 700px;
+                text-align: center;
+
+            }
+            .sfondo {
+                --background:transparent url('/images/white.gif') repeat center top;
+                --background-color: white;
+                background-color: rgba(255, 255, 255, 0.4);
+                --opacity: 0.4;
+                color: #3b3929;
+                --color: black;
+                font-weight: bold;
+                max-width: 1200px;
+                height: 700px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
+                --margin: 40px;
+                --border: 1px solid red;
+            }
+            .nome {
+                position: relative;
+                width: 400px;
+                font-size: 3em;
+                top: 50px;
+            }
+            div {
+                --border: 1px solid red;
+            }
+            .left {
+                left: 50px;
+                float: left;
+                text-align: center;
+            }
+            .right {
+                right: 50px;
+                float:right;
+                text-align: center;
+            }
+            @font-face {
+                font-family: 'Englische'; /*a name to be used later*/
+                src: url('fonts/EnglischeSchT.ttf'); /*URL to font*/
+            }
+            .centertext {
+                text-align: center;
+                position: absolute;
+                --background-color: bisque;
+                --margin-top: 70px;
+                --margin-left: auto;
+                --margin-right: auto;
+                --border: 1px solid red;
+                --width: 800px;
+                font-size: 2em;
+
+                width: 400px;
+                height: 400px;
+
+
+                position: relative;
+                float: center;
+
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                margin: auto;
+            }
+            .inbasso {
+                position: relative;
+                float: right;
+                width: 400px;
+                font-size: 1.8em;
+                bottom: 50px;
+                right: 150px;
+                --border: 1px solid red;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sfondo">
+            <div class="nome left">Francesca Iofrida</div>
+            <div class="nome right">Raffaele Guidi</div>
+
+            <br clear="all"/>
+            <div style="min-height: 100px"></div>
+            <div class="centertext">
+
+                Sono lieti di annunciare<br/>
+                il loro matrimonio<br/>
+                il 12 giugno 2016<br/>
+                alle ore 11.30<br/>
+                <br/>
+                Cerimonia e ricevimento si terranno<br/>
+                presso la Dimora Storica del<br/>
+                Borgo di Tragliata<br/>
+                in Via del Casale di Tragliata 2,<br/>
+                Fiumicino
+
+            </div>
+            <div style="min-height: 100px"></div>
+            <div class="inbasso">È gradita gentile conferma</div>
+        </div>
+    </body>
+<html>
