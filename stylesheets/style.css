@@ -86,6 +86,16 @@ div#portrait > .centertext {
     font-size: 7vw;
     margin: auto;
 }
+div#landscape > .centertext > .data {
+    position: relative;
+    top: 1vw;
+    font-size: 3vw;
+}
+div#portrait > .centertext > .data {
+    position: relative;
+    top: 2vw;
+    font-size: 5vw;
+}
 div#landscape > .centertext > .cerimonia {
     position: relative;
     top: 2vw;
@@ -93,7 +103,7 @@ div#landscape > .centertext > .cerimonia {
 }
 div#portrait > .centertext > .cerimonia {
     position: relative;
-    top: 2vw;
+    top: 4vw;
     font-size: 5vw;
 }
 div#landscape > .inbasso {
@@ -153,4 +163,14 @@ a:hover {
 a:active {
     color: blue;
     text-decoration: none;
+}
+div#landscape > .inbasso > a > .icona {
+    vertical-align: middle;
+    width: 5vw;
+    margin-top: -1vw;
+}
+div#portrait > .inbasso > a > .icona {
+    vertical-align: bottom;
+    width: 7vw;
+    margin-top: -3vw;
 }
