@@ -1,8 +1,102 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image:  url("../images/fraeraf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: beige;
+    font-family: 'Englische';
+    text-align: center;
+    text-align: center;
 }
-
-a {
-  color: #00B7FF;
+.riquadro {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #3b3929;
+    font-weight: bold;
+    height: 63vw;
+    width: 100%;
+}
+.nome {
+    position: relative;
+    width: 35vw;
+    font-size: 4vw;
+    top: 5vw;
+}
+div {
+    --border: 0.01em solid red;
+}
+.left {
+    left: 7vw;
+    float: left;
+    text-align: center;
+}
+.right {
+    right: 7vw;
+    float:right;
+    text-align: center;
+}
+@font-face {
+    font-family: 'Englische';
+    src: url('../fonts/EnglischeSchT.ttf');
+}
+.centertext {
+    position: relative;
+    float: center;
+    text-align: center;
+    position: relative;
+    top: 10vw;
+    width: 50vw;
+    height: 37vw;
+    font-size: 4vw;
+    margin: auto;
+}
+.cerimonia {
+    position: relative;
+    top: 2vw;
+    font-size: 3vw;
+}
+.inbasso {
+    position: relative;
+    float: center;
+    top: 10vw;
+    width: 100vw;
+    font-size: 3vw;
+    right: 3vw;
+    text-align: center;
+}
+.esterno {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#fuori {
+    height: 250px
+}
+#floater {
+    float: left;
+    height: 50%;
+    width: 100%;
+    margin-bottom: -50px;
+}
+#dentro {
+    clear: both;
+    height: 100px;
+}
+a:link {
+    color: beige;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: beige;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: none;
 }
