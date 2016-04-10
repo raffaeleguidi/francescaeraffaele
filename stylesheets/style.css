@@ -19,13 +19,12 @@ div {
     height: 63vw;
     width: 100%;
 }
-
 .riquadro#portrait {
     display: none;
     background-color: rgba(255, 255, 255, 0.4);
     color: #3b3929;
     font-weight: bold;
-    height: 80%;
+    height: 90%;
     margin: auto;
     width: 90%;
 }
@@ -38,7 +37,7 @@ div {
 #portrait > .nome {
     position: relative;
     width: 50vw;
-    font-size: 6vw;
+    font-size: 7vw;
     top: 5vw;
 }
 .left {
@@ -52,8 +51,8 @@ div {
     width: 100%
     text-align: center;
 }
-.small {
-    font-size: 3vw;
+#portrait > .small {
+    font-size: 5vw;
 }
 .right {
     right: 7vw;
@@ -80,10 +79,10 @@ div#portrait > .centertext {
     float: center;
     text-align: center;
     position: relative;
-    top: 5vw;
+    top: 7vw;
     width: 70vw;
-    height: 50vw;
-    font-size: 6vw;
+    height: 60vw;
+    font-size: 7vw;
     margin: auto;
 }
 div#landscape > .centertext > .cerimonia {
@@ -94,7 +93,7 @@ div#landscape > .centertext > .cerimonia {
 div#portrait > .centertext > .cerimonia {
     position: relative;
     top: 2vw;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 div#landscape > .inbasso {
     position: relative;
@@ -114,7 +113,7 @@ div#portrait > .inbasso {
     left: 0;
     right: 0;
     width: 100%;
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: center;
 }
 .esterno {
