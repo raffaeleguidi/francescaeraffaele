@@ -174,3 +174,32 @@ div#portrait > .inbasso > a > .icona {
     width: 7vw;
     margin-top: -3vw;
 }
+/*.sposini {
+    position: absolute;
+    display: block;
+    height: 15vw;
+    right: 0;
+    bottom: 2vw;
+}*/
+/*.sposini {
+    position: absolute;
+    display: block;
+    height: 14vw;
+    left: 45vw;
+    top: 0vw;
+}*/
+div#landscape > .sposini {
+    position: absolute;
+    display: block;
+    height: 14vw;
+    left: 45vw;
+    top: 0.5vw;
+}
+div#portrait > .sposini {
+    position: absolute;
+    display: block;
+    height: 20vw;
+    left: 38vw;
+    top: 0.5vw;
+    z-index: -100000;
+}
