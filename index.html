@@ -8,7 +8,8 @@
             return window.innerHeight > window.innerWidth;
         }
         function check_resize(){
-            var bh = window.innerHeight;
+            //var bh = window.innerHeight;
+            var bh = document.documentElement.clientHeight;
             var active;
             if (portrait()) {
                 $("#landscape").hide();
