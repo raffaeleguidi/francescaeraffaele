@@ -8,12 +8,26 @@ body {
     text-align: center;
     text-align: center;
 }
-.riquadro {
+div {
+    --border: 1px solid red;
+}
+.riquadro#landscape {
+    display: none;
     background-color: rgba(255, 255, 255, 0.4);
     color: #3b3929;
     font-weight: bold;
     height: 63vw;
     width: 100%;
+}
+
+.riquadro#portrait {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #3b3929;
+    font-weight: bold;
+    height: 75vw;
+    margin: auto;
+    width: 70%;
 }
 .nome {
     position: relative;
@@ -29,6 +43,15 @@ div {
     float: left;
     text-align: center;
 }
+.center {
+    float: center;
+    margin: auto;
+    width: 100%
+    text-align: center;
+}
+.small {
+    font-size: 3vw;
+}
 .right {
     right: 7vw;
     float:right;
@@ -38,7 +61,7 @@ div {
     font-family: 'Englische';
     src: url('../fonts/EnglischeSchT.ttf');
 }
-.centertext {
+div#landscape > .centertext {
     position: relative;
     float: center;
     text-align: center;
@@ -49,18 +72,41 @@ div {
     font-size: 4vw;
     margin: auto;
 }
+div#portrait > .centertext {
+    position: relative;
+    float: center;
+    text-align: center;
+    position: relative;
+    top: 5vw;
+    width: 50vw;
+    height: 37vw;
+    font-size: 4vw;
+    margin: auto;
+}
 .cerimonia {
     position: relative;
     top: 2vw;
     font-size: 3vw;
 }
-.inbasso {
+div#portrait > .inbasso {
     position: relative;
     float: center;
     top: 10vw;
     width: 100vw;
     font-size: 3vw;
     right: 3vw;
+    text-align: center;
+}
+div#portrait > .inbasso {
+    display: block;
+    --position: relative;
+    float: center;
+    --top: 10vw;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 3vw;
     text-align: center;
 }
 .esterno {
