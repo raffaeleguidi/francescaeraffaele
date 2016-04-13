@@ -25,6 +25,10 @@
             } else {
                  $("#" + active).offset({"top": 10 });
             }
+            var ww = $(window).width();
+            $("img[data-vw]").each(function(idx, el){
+                $(el).width((ww / 100) * $(el).attr("data-vw"));
+            })
         }
         $( document ).ready(function() {
             setTimeout(check_resize, 200);
@@ -39,7 +43,7 @@
         <div class="riquadro" id="landscape">
             <div class="nome left">Francesca&nbsp;Iofrida</div>
             <div class="nome right">Raffaele Guidi</div>
-            <img class="sposini" src="images/sposini.png" />
+            <img class="sposini" data-vw="14" src="images/sposini.png" />
             
             <br clear="all"/>
 
@@ -57,18 +61,18 @@
                 </span>
             </div>
             <div class="inbasso">
-                <a target="_blank" href="http://www.tragliata.it/"><img class="icona" src="images/borgo.png" />Il Borgo di Tragliata</a>
-                <a target="_blank" href="https://www.google.it/maps/place/Borgo+di+Tragliata/@41.9722274,12.2555156,17z/data=!3m1!4b1!4m2!3m1!1s0x132f59ffbeda03ab:0xf93fc4f36057de"><img style="margin-right: -1vw" class="icona" src="images/mappa.png" />Come arrivare</a>
+                <a target="_blank" href="http://www.tragliata.it/"><img data-vw="5" class="icona" src="images/borgo.png" />Il Borgo di Tragliata</a>
+                <a target="_blank" href="https://www.google.it/maps/place/Borgo+di+Tragliata/@41.9722274,12.2555156,17z/data=!3m1!4b1!4m2!3m1!1s0x132f59ffbeda03ab:0xf93fc4f36057de"><img style="margin-right: -1vw" data-vw="5" class="icona" src="images/mappa.png" />Come arrivare</a>
                 <br />
-                <a target="_blank" href="comecontribuire.pdf"><img class="icona" src="images/aereo.png" />Lista di nozze</a>
-                <a target="_blank" href="http://www.visitnorway.it/"><img class="icona" src="images/valigia.png" />Il viaggio</a>
+                <a target="_blank" href="comecontribuire.pdf"><img class="icona" data-vw="5" src="images/aereo.png" />Lista di nozze</a>
+                <a target="_blank" href="http://www.visitnorway.it/"><img class="icona" data-vw="5" src="images/valigia.png" />Il viaggio</a>
             </div>
         </div>
         <div class="riquadro" id="portrait">
             <div class="nome center">Francesca&nbsp;Iofrida</div>
             <div class="nome center small">e</div>
             <div class="nome center">Raffaele Guidi</div>
-            <img class="sposini" src="images/sposini.png" />
+            <img class="sposini" data-vw="20" src="images/sposini.png" />
 
             <br clear="all"/>
 
@@ -86,11 +90,11 @@
                 </span>
             </div>
             <div class="inbasso">
-                <a target="_blank" href="http://www.tragliata.it/"><img class="icona" src="images/borgo.png" />Il Borgo di Tragliata</a>
-                <a target="_blank" href="https://www.google.it/maps/place/Borgo+di+Tragliata/@41.9722274,12.2555156,17z/data=!3m1!4b1!4m2!3m1!1s0x132f59ffbeda03ab:0xf93fc4f36057de"><img style="margin-right: -2vw" class="icona" src="images/mappa.png" />Come arrivare</a>
+                <a target="_blank" href="http://www.tragliata.it/"><img data-vw="7" class="icona" src="images/borgo.png" />Il Borgo di Tragliata</a>
+                <a target="_blank" href="https://www.google.it/maps/place/Borgo+di+Tragliata/@41.9722274,12.2555156,17z/data=!3m1!4b1!4m2!3m1!1s0x132f59ffbeda03ab:0xf93fc4f36057de"><img style="margin-right: -2vw" class="icona" data-vw="7" src="images/mappa.png" />Come arrivare</a>
                 <br />
-                <a target="_blank" href="comecontribuire.pdf"><img class="icona" src="images/aereo.png" />Lista di nozze</a>
-                <a target="_blank" href="http://www.visitnorway.it/"><img class="icona" src="images/valigia.png" />Il viaggio</a>
+                <a target="_blank" href="comecontribuire.pdf"><img data-vw="7" class="icona" src="images/aereo.png" />Lista di nozze</a>
+                <a target="_blank" href="http://www.visitnorway.it/"><img data-vw="7" class="icona" src="images/valigia.png" />Il viaggio</a>
             </div>
         </div>
     </body>

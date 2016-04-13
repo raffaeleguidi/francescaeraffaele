@@ -179,13 +179,14 @@ div#portrait > .inbasso > a > .icona {
 div#landscape > .sposini {
     position: absolute;
     display: block;
-    height: 14vw;
+    width: 14vw;
     left: 40vw;
     top: 0.5vw;
 }
 div#portrait > .sposini {
     position: absolute;
     display: block;
+    width: 20vw;
     height: 20vw;
     left: 37vw;
     top: 0.5vw;
