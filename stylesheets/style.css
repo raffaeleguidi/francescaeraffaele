@@ -17,7 +17,9 @@ div {
     color: #3b3929;
     font-weight: bold;
     height: 63vw;
-    width: 100%;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 .riquadro#portrait {
     display: none;
@@ -41,7 +43,7 @@ div {
     top: 5vw;
 }
 .left {
-    left: 7vw;
+    left: 5vw;
     float: left;
     text-align: center;
 }
@@ -56,7 +58,7 @@ div {
     line-height: 2vw;
 }
 .right {
-    right: 7vw;
+    right: 5vw;
     float:right;
     text-align: center;
 }
@@ -110,7 +112,7 @@ div#landscape > .inbasso {
     position: relative;
     float: center;
     top: 10vw;
-    width: 100vw;
+    width: 90vw;
     font-size: 3vw;
     right: 3vw;
     text-align: center;
@@ -174,25 +176,11 @@ div#portrait > .inbasso > a > .icona {
     width: 7vw;
     margin-top: -3vw;
 }
-/*.sposini {
-    position: absolute;
-    display: block;
-    height: 15vw;
-    right: 0;
-    bottom: 2vw;
-}*/
-/*.sposini {
-    position: absolute;
-    display: block;
-    height: 14vw;
-    left: 45vw;
-    top: 0vw;
-}*/
 div#landscape > .sposini {
     position: absolute;
     display: block;
     height: 14vw;
-    left: 45vw;
+    left: 40vw;
     top: 0.5vw;
 }
 div#portrait > .sposini {

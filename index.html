@@ -26,10 +26,8 @@
                  $("#" + active).offset({"top": 10 });
             }
         }
-        //setInterval(check_resize, 200);
         $( document ).ready(function() {
             setTimeout(check_resize, 200);
-            //check_resize();
         });
         $( window ).resize(function() {
             check_resize();
